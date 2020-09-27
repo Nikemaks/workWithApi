@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="mainForm">
+                <div class="steps">
+                    <div class="step step_active">
+                        <div class="fields-wrapper">
+                            <div class="field-wrapper">
+                                <label for="firstName" class="field-label">First Name</label>
+                                <input type="text" class="field" id="firstName" name="firstName" data-validation maxlength="64">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="lastName" class="field-label">Last Name</label>
+                                <input type="text" class="field" id="lastName" name="lastName" data-validation maxlength="64">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="email" class="field-label">Email</label>
+                                <input type="email" class="field" id="email" name="email" data-validation maxlength="64">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="phone" class="field-label">Phone Number</label>
+                                <input type="tel" class="field" id="phone" name="phone" data-validation placeholder="12345678" maxlength="8">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="password" class="field-label">Password</label>
+                                <input type="password" class="field" id="password" name="password" data-validation autocomplete="on" maxlength="30">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="password2" class="field-label">Confirm Password</label>
+                                <input type="password" class="field" id="password2" name="password2" data-validation autocomplete="on" maxlength="30">
+                                <span class="field-error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="fields-wrapper">
+                            <div class="field-wrapper">
+                                <label for="zip" class="field-label">Zip</label>
+                                <input type="tel" class="field" id="zip" name="zip" data-validation maxlength="5">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="state" class="field-label">State</label>
+                                <input type="text" class="field" id="state" name="state" disabled maxlength="64">
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="city" class="field-label">City</label>
+                                <input type="text" class="field" id="city" name="city" disabled maxlength="64">
+                                <span class="field-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button type="button" class="control control_hide control_prev">Prev</button>
+                    <button type="button" class="control control_next">Next</button>
+                    <button type="submit" class="control control_hide control_submit">Submit</button>
+                </div>
+            </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
